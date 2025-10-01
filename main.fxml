@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="sacsors.MainController">
+    <children>
+        <VBox spacing="10" alignment="CENTER" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20">
+            <Label text="SACS-ORS Farm Entry"/>
+            <TextField fx:id="farmId" promptText="Farm ID"/>
+            <TextField fx:id="farmName" promptText="Farm Name"/>
+            <Button text="Add Farm" onAction="#addFarm"/>
+            <Button text="Load Farms" onAction="#loadFarms"/>
+            <TextArea fx:id="output" prefWidth="300" prefHeight="200"/>
+        </VBox>
+    </children>
+</AnchorPane>
